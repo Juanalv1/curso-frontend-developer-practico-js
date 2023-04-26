@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+      
+    :root{
+      --white: #ffffff;
+      --black: #000000;
+      --very-light-pink: #c7c7c7;
+      --hospital-green: #acd9b2;
+      --dark: #232830;
+      --text-input-field: #f7f7f7;
+      --sm: 16px;
+      --md: 18px;
+      --lg: 22px;
+          }
+    body{
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
+    .my-orders{
+      width: 100%;
+      display: grid;
+      place-content: center;
+      
+    }
+    .orders-container{
+      display: grid;
+      place-content: center;
+      width: 100%;
+      height: 100vh;
+      margin-left: 12px;
+      margin-right: 10px;
+    }
+    .title{
+      font-size: var(--lg);
+      font-weight: bold;
+      display: none;
+    }
+    .order{
+      display: grid;
+      grid-template-columns:  1fr 3fr auto;
+      place-items: center;
+      gap: 24px;
+
+    }
+    .order p:nth-child(2){
+      justify-self: end;
+      align-self: center;
+      font-size: var(--md);
+      font-weight: bold;
+      color: var(--very-light-pink);
+    }
+    .order p span{
+      display: block;
+      padding-top: 4px;
+      padding-bottom: 2px;
+    }
+    .order p span:nth-child(1){
+      font-size: var(--md);
+      font-weight: bold;
+    }
+    .order p span:nth-child(2){
+      font-size: var(--sm);
+      font-size: 300;
+      color: var(--very-light-pink);
+    }
+    @media (max-width: 640px){
+      .title{
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="my-orders">
+    <div class="orders-container">
+      <h1 class="title">My orders</h1>
+      <div class="order">
+        <p>
+          <span>04.25.2021</span>
+          <span>6 articles</span>
+        </p>
+        <p>$120,00</p>
+        <img src="./Platzi_YardSale_Icons/flechita.svg" alt="arrow">
+      </div>
+      
+      <div class="order">
+        <p>
+          <span>02.20.2021</span>
+          <span>6 articles</span>
+        </p>
+        <p>$120,00</p>
+        <img src="./Platzi_YardSale_Icons/flechita.svg" alt="arrow">
+      </div>
+
+      <div class="order">
+        <p>
+          <span>02.10.2021</span>
+          <span>6 articles</span>
+        </p>
+        <p>$120,00</p>
+        <img src="./Platzi_YardSale_Icons/flechita.svg" alt="arrow">
+      </div>
+
+      <div class="order">
+        <p>
+          <span>01.09.2021</span>
+          <span>6 articles</span>
+        </p>
+        <p>$120,00</p>
+        <img src="./Platzi_YardSale_Icons/flechita.svg" alt="arrow">
+      </div>
+
+      <div class="order">
+        <p>
+          <span>01.08.2021</span>
+          <span>6 articles</span>
+        </p>
+        <p>$120,00</p>
+        <img src="./Platzi_YardSale_Icons/flechita.svg" alt="arrow">
+      </div> 
+    </div>
+  </div>
+</body>
+</html>

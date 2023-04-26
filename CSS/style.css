@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --hospital-green: #acd9b2;
+    --dark: #232830;
+    --text-input-field: #f7f7f7;
+    --sm: 16px;
+    --md: 18px;
+    --lg: 22px;
+
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--dark);
+    
+}
+.form-container{
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 320px;
+    background-color: white;
+    border-radius: 10px;
+}
+.logo{
+    width: 150px;
+    margin: 18px 4px 40px 4px;
+    justify-self: center;
+    display: none;
+}
+.title{
+    font-size: var(--lg);
+    margin: 28px 0px 24px 10px;
+    text-align: center;
+    
+}
+.subtitle{
+    color: var(--black);
+    font-size: var(--sm);
+    font-weight: 400;
+    margin-top: 0;
+    place-self: center;
+    margin-bottom: 32px;
+    margin-left: 10px;
+    margin-right: 12px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+
+}
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 14px;
+    margin-left: 10px;
+    
+}
+.input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 42px;
+    font-size: var(--md);
+    padding: 8px;
+    margin-bottom: 28px;
+    margin-left: 16px;
+    margin-right: 12px;
+}
+.primary-button{
+    background-color: var(--hospital-green);
+    color: var(--white);
+    border: none;
+    width: 90%;
+    height: 20%;
+    border-radius: 8px;
+    text-align: center;
+    font-size: var(--md);
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+    place-self: center;
+}
+.login-button{
+    margin: 12px 6px 20px 6px;
+}
+
+@media (max-width: 640px){
+    .logo{
+        display: block;
+    }
+}
+    

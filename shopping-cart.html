@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+			
+    :root{
+        --white: #ffffff;
+        --black: #000000;
+        --very-light-pink: #c7c7c7;
+        --hospital-green: #acd9b2;
+        --dark: #232830;
+        --text-input-field: #f7f7f7;
+        --sm: 16px;
+        --md: 18px;
+        --lg: 22px;
+			
+			}
+    body{
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      display: flex;
+      justify-content: end;
+        }
+    .shopping-cart{
+      width: 320px;
+      display: grid;
+      place-content: center;
+      margin-top: 20px;
+    }
+    .title-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+    }
+    .title-container .arrow{
+      transform: rotate(180deg);
+      margin: 0 4px 0 12px;
+    }
+    .title-container .title{
+      font-size: var(--lg);
+      font-weight: bold;
+      margin: 0 0 0 12px;
+    }
+
+    .shopping-cart-card-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .shopping-cart-card{
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr 1fr 2fr auto;
+      gap: 14px;
+      padding: 8px;
+      margin: 4px 0px 4px 0;
+    }
+    .shopping-cart-card p:nth-child(2){
+      color: var(--very-light-pink);
+      font-weight: 400;
+      font-size: var(--sm);
+    }
+    .shopping-cart-card p:nth-child(3){
+      font-weight: bold;
+      font-size: var(--sm);
+      justify-self: end;
+    }
+    .product-image{
+      width: 60px;
+      border-radius: 16px;
+    }
+    .icon-close{
+      width: 10px;
+    }
+    .total-container{
+      background-color: var(--text-input-field);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 14px;
+      margin-top: 22px;
+
+    }
+    .total-container p{
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+    .total-container p:nth-child(1){
+      font-size: var(--sm);
+      font-weight: 400;
+    }
+    .total-container p:nth-child(2){
+      font-size: var(--sm);
+      font-weight: bold;
+    }
+    .primary-button{
+      background-color: var(--hospital-green);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      text-align: center;
+      font-size: var(--md);
+      font-weight: bold;
+      padding: 16px;
+      cursor: pointer;
+      place-self: center;
+      width: 100%;
+      margin-top: 22px;
+  }
+  @media (max-width: 640px){
+    .shopping-cart{
+      width: 100%;
+    }
+    .title-container{
+      display: none;
+    }
+  }  </style>
+</head>
+<body>
+  <aside class="shopping-cart">
+    <div class="title-container">
+      <img src="./Platzi_YardSale_Icons/flechita.svg" alt="arrow" class="arrow">
+      <h1 class="title">Shopping cart</h1>
+    </div>
+    <div class="shopping-cart-card-container">
+      <div class="shopping-cart-card">
+        <img src="https://images.pexels.com/photos/3428498/pexels-photo-3428498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Guitar" class="product-image">      
+        <p>Guitar</p>
+        <p>$120.00</p>
+        <img src="./Platzi_YardSale_Icons/icon_close.png" alt="-icon close" class="icon-close">
+      </div>
+
+      <div class="shopping-cart-card">
+        <img src="https://images.pexels.com/photos/3428498/pexels-photo-3428498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Guitar" class="product-image">      
+        <p>Guitar</p>
+        <p>$120.00</p>
+        <img src="./Platzi_YardSale_Icons/icon_close.png" alt="-icon close" class="icon-close">
+      </div>
+
+      <div class="shopping-cart-card">
+        <img src="https://images.pexels.com/photos/3428498/pexels-photo-3428498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Guitar" class="product-image">      
+        <p>Guitar</p>
+        <p>$120.00</p>
+        <img src="./Platzi_YardSale_Icons/icon_close.png" alt="-icon close" class="icon-close">
+      </div>
+
+      <div class="shopping-cart-card">
+        <img src="https://images.pexels.com/photos/3428498/pexels-photo-3428498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Guitar" class="product-image">      
+        <p>Guitar</p>
+        <p>$120.00</p>
+        <img src="./Platzi_YardSale_Icons/icon_close.png" alt="-icon close" class="icon-close">
+      </div>
+
+      <div class="shopping-cart-card">
+        <img src="https://images.pexels.com/photos/3428498/pexels-photo-3428498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Guitar" class="product-image">      
+        <p>Guitar</p>
+        <p>$120.00</p>
+        <img src="./Platzi_YardSale_Icons/icon_close.png" alt="-icon close" class="icon-close">
+      </div>
+
+    </div>
+
+    <div class="total-container">
+      <p>Total</p>
+      <p>$560.00</p>
+    </div>
+
+    <button class="primary-button checkout-button">Checkout</button>
+  </aside>
+</body>
+</html>
