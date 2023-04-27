@@ -44,7 +44,7 @@
 
     <div class="navbar-right">
       <a href="/" class="navbar-email" >Yardsale@example.com</a>
-      <img src="./Platzi_YardSale_Icons/flechita.svg" alt="arrow" class="arrow">
+      <img src="./Platzi_YardSale_Icons/flechita.svg" alt="arrow" id="email-arrow" class="arrow">
       <img src="./Platzi_YardSale_Icons/icon_shopping_cart_notification.svg" class="shopping-cart-icon" alt="Shooping Cart">
     </div>
     <div class="desktop-menu inactive">
@@ -60,9 +60,10 @@
       </li>
       </ul>
       </div>
+
       <aside class="shopping-cart inactive">
         <div class="title-container">
-          <img src="./Platzi_YardSale_Icons/flechita.svg" alt="arrow" class="arrow">
+          <img src="./Platzi_YardSale_Icons/flechita.svg" alt="arrow" id="shopping-arrow" class="arrow">
           <h1 class="title">Shopping cart</h1>
         </div>
         <div class="shopping-cart-card-container">
@@ -118,23 +119,25 @@
 
       <div class="cards-container">
 
-        <div class="product-card">
-          <img src="https://images.pexels.com/photos/3428498/pexels-photo-3428498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="product">
-          <div class="product-info">
-            <div>
-              <p>120,00$</p>
-              <p>Product</p>
-            </div>
-            <figure>
-              <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
-            </figure>
-          </div>
-        </div>
         
-        
-  
+       
       </div>
     </section>
+    <aside class="product-detail inactive">
+      <div class="product-detail-image-container">
+         <img src="./Platzi_YardSale_Icons/icon_close.png" alt="close" class="product-detail-close">
+         <img src="https://images.pexels.com/photos/3428498/pexels-photo-3428498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Guitar" class="aside-product-image"></div>
+         <div class="product-info-aside">
+           <p>$35,00</p>
+           <p>Bike</p>
+           <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
+           <button class="aside-button add-to-cart-button">
+             <img src="./Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="add to cart">
+             Add to cart
+           </button>
+       </div>
+     </aside>
+
   </main>
   <script src="main.js"></script>
 </body>
